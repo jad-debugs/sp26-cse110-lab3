@@ -9,6 +9,7 @@
  /* background-color + rgb() */
 body {
     background-color: rgb(240, 240, 240);
+    font-family: "Inter", sans-serif;
 }
 
 h1 {
@@ -188,4 +189,18 @@ nav {
     a {
         text-decoration: none;
     }
+}
+
+@media (max-width: 600px) {
+    nav > ul {
+        flex-direction: column;
+    }
+
+    fieldset {
+        grid-template-columns: 1fr;
+    }
+}
+
+img, video {
+    max-width: 100%;
 }
