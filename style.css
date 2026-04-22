@@ -21,3 +21,37 @@ h1 {
 #black-text {
     color: hsl(38, 85%, 3%);
 }
+
+/* Another color format */
+.rgba-text {
+    color: rgba(0, 0, 255, 0.7);
+}
+  
+/* Wider-gamut color */
+.wide-color-text {
+    color: color(display-p3 1 0 0);
+}
+  
+/* color-mix() */
+.mixed-color-text {
+    color: color-mix(in srgb, red 50%, blue 50%);
+}
+  
+/* CSS variable with fallback */
+.variable-text {
+    color: var(--main-color, rgb(151, 20, 127));
+}
+  
+/* Relative units */
+.relative-units {
+    font-size: 2em;
+    margin-top: 5%;
+    padding-left: 1rem;
+}
+
+/* Absolute units */
+.absolute-units {
+    font-size: 20px;
+    margin-left: 1cm;
+    padding-top: 5mm;
+}
