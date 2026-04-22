@@ -110,3 +110,82 @@ video {
     width: 320px;
     height: 240px;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+/* flexbox */
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+/* grid */
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* attribute selector */
+input[type="text"] {
+    border: 1px solid black;
+}
+
+/* selector list */
+h2, h3 {
+    color: black;
+}
+
+/* descendant */
+section p {
+    line-height: 1.4;
+}
+
+/* child */
+section > h2 {
+    background-color: white;
+}
+
+/* general sibling */
+h3 ~ p {
+    margin-left: 10px;
+}
+
+/* adjacent sibling */
+h3 + p {
+    font-style: italic;
+}
+
+/* combining selectors */
+p.variable-text {
+    text-align: center;
+}
+
+/* pseudo-classes */
+a:hover {
+    color: red;
+}
+
+button:active {
+    background-color: lightgray;
+}
+
+/* :has() */
+section:has(img) {
+    border: 2px dashed black;
+}
+
+/* fallback (works everywhere) */
+nav a {
+    text-decoration: none;
+}
+
+/* nested selector (requirement) */
+nav {
+    a {
+        text-decoration: none;
+    }
+}
