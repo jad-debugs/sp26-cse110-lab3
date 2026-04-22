@@ -39,7 +39,7 @@ h1 {
   
 /* CSS variable with fallback */
 .variable-text {
-    color: var(--main-color, rgb(151, 20, 127));
+    color: var(--primary-color, rgb(151, 20, 127));
 }
   
 /* Relative units */
